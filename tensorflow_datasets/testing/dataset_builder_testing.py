@@ -361,6 +361,7 @@ class DatasetBuilderTestCase(
         download=self._get_dl_download_result,
         download_checksums=self._download_checksums,
         manual_dir=manual_dir,
+        download_dir=self.example_dir,
     ):
       if isinstance(builder, dataset_builder.BeamBasedBuilder):
         # For Beam datasets, set-up the runner config
